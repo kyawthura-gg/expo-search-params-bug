@@ -19,7 +19,10 @@ export default function HomeScreen() {
       </Text>
 
       <Text
-        style={{ marginTop: 10 }}
+        style={{
+          marginTop: 10,
+          backgroundColor: sortBy === "oldest" ? "gray" : undefined,
+        }}
         onPress={() =>
           router.setParams({
             sortBy: sortBy === "oldest" ? undefined : "oldest",
